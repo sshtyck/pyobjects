@@ -46,7 +46,7 @@ def doesClass(line):
        print module_name + '.' + class_name
        #class SomeClass: pass
        doesclass = class_name.partition('(').__getitem__(0).strip()
-       tryDoc(doesclass)
+       #tryDoc(doesclass)
        #We need to check the methods.
        int = lines.index(line).__add__(1)
        to = lines.__len__().__sub__(1)
@@ -96,7 +96,7 @@ def doesDef(line, doesclass='', tabs='', index=None):
        else:
            print tabs + module_name + '.' + def_name
        def_name = def_name.partition('(').__getitem__(0).strip()
-       tryDoc(def_name, doesclass=doesclass)
+       #tryDoc(def_name, doesclass=doesclass)
 
 def tryDoc(object_name, doesclass=None):
     try:
