@@ -57,3 +57,39 @@ message._formatparam(param, value=None, quote=True)
 message._parseparam(s)
 message._unquotevalue(value)
 ```
+
+I tried to make it as simple as it could be.
+
+Just add it into your `/usr/local/bin`
+
+`debian@debian:~$ sudo mv ./pyobjects.py /usr/local/bin`
+
+Evaluate it objectively.
+
+--
+<blockquote>
+<pre>
+Python may be much better - for the people who will never ask "what is
+an object" and "what is a class"... (*)
+
+My impression is that there are several kinds of newbies, not just one
+kind... I started programming more than 20 years ago, and I still
+can't understand Python - and the whitespace/indentation thing is not
+the problem. Lua at least is extremely honest - it is relatively easy
+to explain tables to newbies as lists of pairs (plus a slot for the
+metatable), and functions and closures are not much harder...
+
+  Cheers,
+    Eduardo Ochs
+    eduardoochs &lt;at&gt; gmail.com
+    <a href="http://angg.twu.net/">http://angg.twu.net/</a>
+
+(*) Well, there are the standard answers for those questions, that we
+all know... "everything is an object! A car is an object! A pizza is
+an object! A window is an object! And every object has a class, and a
+class is also an object"... I am still trying to understand why some
+people seem to feel perfectly at ease with these kinds of ideas, while
+I don't... Links?
+</pre>
+http://thread.gmane.org/gmane.comp.lang.lua.general/57433/focus=57459
+</blockquote>
