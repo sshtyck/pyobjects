@@ -3,11 +3,21 @@ pyobjects
 
 Script that prints all the variables, classes, class methods and functions from a python module.
 
-`Usage: ./pyobjects.py </usr/lib/python2.7/module.py>`
+Usage:
+------
+
+```bash
+./pyobjects.py /path/to/your/module.py
+```
 
 For example:
-```
+------------
+
+```bash
 debian@debian:/mnt/docs/dev/git/pyobjects$ ./pyobjects.py /usr/lib/python2.7/email/message.py
+```
+
+```python
 message.__all__
 message.SEMISPACE
 message.tspecials
@@ -58,16 +68,25 @@ message._parseparam(s)
 message._unquotevalue(value)
 ```
 
+Design
+------
+
 I tried to make it as simple as it could be.
 
-Just add it into your `/usr/local/bin`
+Placement
+---------
 
-`debian@debian:~$ sudo mv ./pyobjects.py /usr/local/bin`
+Just add it into your `/usr/local/bin`.
+
+```bash
+debian@debian:~$ sudo mv ./pyobjects.py /usr/local/bin
+```
 
 Evaluate it objectively.
+------------------------
 
---
-<blockquote>
+[Suitability of Lua as a First Programming Language?](http://thread.gmane.org/gmane.comp.lang.lua.general/57433/focus=57459)
+
 <pre>
 Python may be much better - for the people who will never ask "what is
 an object" and "what is a class"... (*)
@@ -91,5 +110,3 @@ class is also an object"... I am still trying to understand why some
 people seem to feel perfectly at ease with these kinds of ideas, while
 I don't... Links?
 </pre>
-http://thread.gmane.org/gmane.comp.lang.lua.general/57433/focus=57459
-</blockquote>
